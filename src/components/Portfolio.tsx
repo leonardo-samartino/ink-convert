@@ -1,21 +1,21 @@
 const Portfolio = () => {
   return (
     <section id="portfolio" className="section-padding bg-background">
-      <div className="container mx-auto">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-10 md:mb-16">
           <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4">
             Nosso Trabalho
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             Instagram
           </h2>
-          <p className="text-muted-foreground font-body text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground font-body text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
             Acompanhe nosso trabalho e inspire-se com as últimas criações do estúdio
           </p>
         </div>
 
         <div className="flex justify-center">
-          <div className="w-full max-w-4xl aspect-[4/5] md:aspect-[16/9] rounded-lg overflow-hidden bg-card border border-border">
+          <div className="w-full max-w-4xl aspect-square sm:aspect-[4/5] md:aspect-[16/9] rounded-lg overflow-hidden bg-card border border-border">
             <iframe
               src="https://www.instagram.com/estudiovisiontattoo/embed"
               className="w-full h-full"
@@ -27,7 +27,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="text-center mt-8">
+        <div className="text-center mt-6 sm:mt-8">
           <a
             href="https://www.instagram.com/estudiovisiontattoo/"
             target="_blank"

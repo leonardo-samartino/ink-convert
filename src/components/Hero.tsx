@@ -22,30 +22,30 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 py-32 md:py-40">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-24 sm:py-32 md:py-40">
         <div className="max-w-2xl">
-          <p className="text-primary font-body text-sm md:text-base tracking-[0.3em] uppercase mb-6 animate-fade-up">
+          <p className="text-primary font-body text-xs sm:text-sm md:text-base tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-4 sm:mb-6 animate-fade-up">
             Estúdio de Tatuagem Premium
           </p>
           
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] mb-4 sm:mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Arte que{" "}
             <span className="text-gradient">vive</span>
             <br />
             na sua pele
           </h1>
           
-          <p className="text-muted-foreground text-lg md:text-xl font-body font-light max-w-lg mb-10 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-muted-foreground text-base sm:text-lg md:text-xl font-body font-light max-w-lg mb-8 sm:mb-10 animate-fade-up" style={{ animationDelay: "0.2s" }}>
             Transformamos suas ideias em obras de arte únicas e personalizadas. 
             Cada traço conta uma história.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            <Button variant="hero" size="xl" onClick={scrollToContact}>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+            <Button variant="hero" size="lg" className="w-full sm:w-auto" onClick={scrollToContact}>
               Agendar Consulta
               <ArrowRight className="ml-2" />
             </Button>
-            <Button variant="heroOutline" size="xl" onClick={() => document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth" })}>
+            <Button variant="heroOutline" size="lg" className="w-full sm:w-auto" onClick={() => document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth" })}>
               Ver Portfólio
             </Button>
           </div>
@@ -53,7 +53,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce hidden sm:block">
         <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
           <div className="w-1 h-3 bg-primary rounded-full mt-2" />
         </div>
