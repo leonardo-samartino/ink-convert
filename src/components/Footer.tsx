@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="font-display text-2xl font-bold tracking-tight">
-            <span className="text-foreground">INK</span>
-            <span className="text-primary">NOIR</span>
+            <span className="text-foreground">VISION</span>
+            <span className="text-primary">TATTOO</span>
           </div>
 
           <div className="flex items-center gap-6">
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
 
           <p className="text-muted-foreground font-body text-sm">
-            © 2024 INK NOIR. Todos os direitos reservados.
+            © 2024 Estudio Vision Tattoo. Todos os direitos reservados.
           </p>
         </div>
       </div>

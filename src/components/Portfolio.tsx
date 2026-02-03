@@ -1,26 +1,3 @@
-const portfolioItems = [
-  {
-    id: 1,
-    title: "Realismo",
-    image: "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=600&h=600&fit=crop",
-  },
-  {
-    id: 2,
-    title: "Blackwork",
-    image: "https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?w=600&h=600&fit=crop",
-  },
-  {
-    id: 3,
-    title: "Fineline",
-    image: "https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?w=600&h=600&fit=crop",
-  },
-  {
-    id: 4,
-    title: "Neo Traditional",
-    image: "https://images.unsplash.com/photo-1590246815117-2c4c0f80f7c0?w=600&h=600&fit=crop",
-  },
-];
-
 const Portfolio = () => {
   return (
     <section id="portfolio" className="section-padding bg-background">
@@ -29,31 +6,39 @@ const Portfolio = () => {
           <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4">
             Nosso Trabalho
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold">
-            Portfólio
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            Instagram
           </h2>
+          <p className="text-muted-foreground font-body text-lg max-w-2xl mx-auto">
+            Acompanhe nosso trabalho e inspire-se com as últimas criações do estúdio
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-          {portfolioItems.map((item, index) => (
-            <div
-              key={item.id}
-              className="group relative aspect-square overflow-hidden rounded-lg cursor-pointer hover-lift"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                <h3 className="font-display text-xl font-semibold text-foreground">
-                  {item.title}
-                </h3>
-              </div>
-            </div>
-          ))}
+        <div className="flex justify-center">
+          <div className="w-full max-w-4xl aspect-[4/5] md:aspect-[16/9] rounded-lg overflow-hidden bg-card border border-border">
+            <iframe
+              src="https://www.instagram.com/estudiovisiontattoo/embed"
+              className="w-full h-full"
+              frameBorder="0"
+              scrolling="no"
+              allowTransparency
+              title="Instagram Estudio Vision Tattoo"
+            />
+          </div>
+        </div>
+
+        <div className="text-center mt-8">
+          <a
+            href="https://www.instagram.com/estudiovisiontattoo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-body text-sm tracking-wide uppercase"
+          >
+            Ver mais no Instagram
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
