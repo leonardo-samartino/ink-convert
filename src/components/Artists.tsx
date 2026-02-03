@@ -24,52 +24,52 @@ const artists = [
 const Artists = () => {
   return (
     <section id="artists" className="section-padding bg-card">
-      <div className="container mx-auto">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-10 md:mb-16">
           <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4">
             Conheça Nossa Equipe
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
             Nossos Artistas
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 max-w-5xl mx-auto">
           {artists.map((artist, index) => (
             <div
               key={artist.id}
-              className="group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-500 hover-lift"
+              className="group bg-background rounded-xl sm:rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-500 hover-lift"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              <div className="flex flex-col md:flex-row">
+              <div className="flex flex-col sm:flex-row">
                 {/* Artist Image */}
-                <div className="relative w-full md:w-48 h-64 md:h-auto flex-shrink-0 overflow-hidden">
+                <div className="relative w-full sm:w-40 md:w-48 h-48 sm:h-auto flex-shrink-0 overflow-hidden">
                   <img
                     src={artist.image}
                     alt={artist.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent md:bg-gradient-to-r" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent sm:bg-gradient-to-r" />
                 </div>
 
                 {/* Artist Info */}
-                <div className="flex-1 p-6 md:p-8 flex flex-col justify-center">
-                  <h3 className="font-display text-2xl md:text-3xl font-bold mb-3 text-foreground">
+                <div className="flex-1 p-5 sm:p-6 md:p-8 flex flex-col justify-center">
+                  <h3 className="font-display text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3 text-foreground">
                     {artist.name}
                   </h3>
 
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
                     {artist.specialties.map((specialty) => (
                       <span
                         key={specialty}
-                        className="px-3 py-1 bg-primary/10 text-primary text-xs font-body tracking-wide rounded-full"
+                        className="px-2 sm:px-3 py-0.5 sm:py-1 bg-primary/10 text-primary text-xs font-body tracking-wide rounded-full"
                       >
                         {specialty}
                       </span>
                     ))}
                   </div>
 
-                  <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
+                  <p className="text-muted-foreground font-body text-sm leading-relaxed mb-4 sm:mb-6">
                     {artist.bio}
                   </p>
 

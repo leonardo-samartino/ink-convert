@@ -33,75 +33,75 @@ const Contact = () => {
 
   return (
     <section id="contact" className="section-padding bg-card">
-      <div className="container mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-20">
           <div>
             <p className="text-primary font-body text-sm tracking-[0.3em] uppercase mb-4">
               Entre em Contato
             </p>
-            <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
               Vamos criar sua{" "}
               <span className="text-gradient">próxima arte</span>
             </h2>
-            <p className="text-muted-foreground font-body text-lg leading-relaxed mb-10">
+            <p className="text-muted-foreground font-body text-base sm:text-lg leading-relaxed mb-8 sm:mb-10">
               Preencha o formulário para agendar uma consulta gratuita. 
               Discutiremos seu projeto, tiraremos dúvidas e criaremos 
               algo único para você.
             </p>
 
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <MapPin className="w-5 h-5 text-primary" />
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-foreground font-body font-medium">Endereço</p>
-                  <p className="text-muted-foreground font-body text-sm">
+                  <p className="text-foreground font-body font-medium text-sm sm:text-base">Endereço</p>
+                  <p className="text-muted-foreground font-body text-xs sm:text-sm">
                     Rua Augusta, 1500 - São Paulo, SP
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Phone className="w-5 h-5 text-primary" />
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-foreground font-body font-medium">Telefone</p>
-                  <p className="text-muted-foreground font-body text-sm">
+                  <p className="text-foreground font-body font-medium text-sm sm:text-base">Telefone</p>
+                  <p className="text-muted-foreground font-body text-xs sm:text-sm">
                     (11) 99999-9999
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Mail className="w-5 h-5 text-primary" />
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-foreground font-body font-medium">Email</p>
-                  <p className="text-muted-foreground font-body text-sm">
-                    contato@inknoir.com.br
+                  <p className="text-foreground font-body font-medium text-sm sm:text-base">Email</p>
+                  <p className="text-muted-foreground font-body text-xs sm:text-sm">
+                    contato@visiontattoo.com.br
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Instagram className="w-5 h-5 text-primary" />
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-foreground font-body font-medium">Instagram</p>
-                  <p className="text-muted-foreground font-body text-sm">
-                    @inknoir.tattoo
+                  <p className="text-foreground font-body font-medium text-sm sm:text-base">Instagram</p>
+                  <p className="text-muted-foreground font-body text-xs sm:text-sm">
+                    @estudiovisiontattoo
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="card-gradient p-8 md:p-10 rounded-lg border border-border">
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="card-gradient p-6 sm:p-8 md:p-10 rounded-lg border border-border">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div>
                 <label className="text-foreground font-body text-sm font-medium mb-2 block">
                   Nome completo
@@ -116,7 +116,7 @@ const Contact = () => {
                 />
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <label className="text-foreground font-body text-sm font-medium mb-2 block">
                     Email
@@ -162,7 +162,7 @@ const Contact = () => {
               <Button
                 type="submit"
                 variant="hero"
-                size="xl"
+                size="lg"
                 className="w-full"
                 disabled={isSubmitting}
               >
