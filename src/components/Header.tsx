@@ -15,8 +15,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="font-display text-2xl font-bold tracking-tight">
-          <span className="text-foreground">INK</span>
-          <span className="text-primary">NOIR</span>
+          <span className="text-foreground">VISION</span>
+          <span className="text-primary">TATTOO</span>
         </div>
 
         {/* Desktop Navigation */}
@@ -25,7 +25,13 @@ const Header = () => {
             onClick={() => scrollToSection("portfolio")}
             className="text-muted-foreground hover:text-foreground transition-colors font-body text-sm tracking-wide uppercase"
           >
-            Portfólio
+            Instagram
+          </button>
+          <button
+            onClick={() => scrollToSection("artists")}
+            className="text-muted-foreground hover:text-foreground transition-colors font-body text-sm tracking-wide uppercase"
+          >
+            Artistas
           </button>
           <button
             onClick={() => scrollToSection("about")}
@@ -64,7 +70,13 @@ const Header = () => {
             onClick={() => scrollToSection("portfolio")}
             className="text-muted-foreground hover:text-foreground transition-colors font-body text-sm tracking-wide uppercase text-left"
           >
-            Portfólio
+            Instagram
+          </button>
+          <button
+            onClick={() => scrollToSection("artists")}
+            className="text-muted-foreground hover:text-foreground transition-colors font-body text-sm tracking-wide uppercase text-left"
+          >
+            Artistas
           </button>
           <button
             onClick={() => scrollToSection("about")}
