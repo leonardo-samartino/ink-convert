@@ -1,4 +1,6 @@
 import { Instagram } from "lucide-react";
+import dudstattooImage from "@/assets/dudstattoo.jpg";
+import calderanoImage from "@/assets/calderanotattoo.webp";
 
 const artists = [
   {
@@ -6,7 +8,7 @@ const artists = [
     name: "Dudstattoo",
     instagram: "https://www.instagram.com/dudstattoo/",
     instagramHandle: "@dudstattoo",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    image: dudstattooImage,
     bio: "Especialista em realismo e blackwork, Duds traz mais de 8 anos de experiência transformando visões em arte permanente. Seu trabalho é marcado pela atenção aos detalhes e técnicas de sombreamento que dão vida a cada peça.",
     specialties: ["Realismo", "Blackwork", "Cover-up"],
   },
@@ -15,7 +17,7 @@ const artists = [
     name: "Calderano Tattoo",
     instagram: "https://www.instagram.com/calderanotattoo/",
     instagramHandle: "@calderanotattoo",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    image: calderanoImage,
     bio: "Com um estilo único que mistura neo-tradicional e fineline, Calderano é conhecido por criar peças elegantes e atemporais. Sua abordagem artística combina criatividade com precisão técnica impecável.",
     specialties: ["Neo-tradicional", "Fineline", "Ilustrativo"],
   },
