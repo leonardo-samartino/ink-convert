@@ -5,21 +5,21 @@ import calderanoImage from "@/assets/calderanotattoo.webp";
 const artists = [
   {
     id: 1,
-    name: "Dudstattoo",
+    name: "Duda Marques",
     instagram: "https://www.instagram.com/dudstattoo/",
     instagramHandle: "@dudstattoo",
     image: dudstattooImage,
-    bio: "Especialista em realismo e blackwork, Duds traz mais de 8 anos de experiência transformando visões em arte permanente. Seu trabalho é marcado pela atenção aos detalhes e técnicas de sombreamento que dão vida a cada peça.",
-    specialties: ["Realismo", "Blackwork", "Cover-up"],
+    bio: "Especialista em fineline e trabalhos florais, Duda traz delicadeza e precisão em cada traço. Seu estilo combina elementos botânicos com referências geek, criando peças únicas e cheias de personalidade.",
+    specialties: ["Fineline", "Floral", "Geek"],
   },
   {
     id: 2,
-    name: "Calderano Tattoo",
+    name: "Yuri Calderano",
     instagram: "https://www.instagram.com/calderanotattoo/",
     instagramHandle: "@calderanotattoo",
     image: calderanoImage,
-    bio: "Com um estilo único que mistura neo-tradicional e fineline, Calderano é conhecido por criar peças elegantes e atemporais. Sua abordagem artística combina criatividade com precisão técnica impecável.",
-    specialties: ["Neo-tradicional", "Fineline", "Ilustrativo"],
+    bio: "Mestre do realismo preto e cinza, Yuri transforma ideias em obras de arte impressionantes. Especialista em cover-ups e trabalhos ilustrativos, seu domínio de luz e sombra dá vida a cada projeto.",
+    specialties: ["Realismo P&B", "Cover-up", "Ilustrativo"],
   },
 ];
 
@@ -45,20 +45,23 @@ const Artists = () => {
             >
               <div className="flex flex-col sm:flex-row">
                 {/* Artist Image */}
-                <div className="relative w-full sm:w-40 md:w-48 h-48 sm:h-auto flex-shrink-0 overflow-hidden">
+                <div className="relative w-full sm:w-40 md:w-48 h-48 sm:h-auto min-h-[200px] flex-shrink-0 overflow-hidden">
                   <img
                     src={artist.image}
                     alt={artist.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent sm:bg-gradient-to-r" />
                 </div>
 
                 {/* Artist Info */}
                 <div className="flex-1 p-5 sm:p-6 md:p-8 flex flex-col justify-center">
-                  <h3 className="font-display text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3 text-foreground">
+                  <h3 className="font-display text-xl sm:text-2xl md:text-3xl font-bold mb-1 text-foreground">
                     {artist.name}
                   </h3>
+                  <p className="text-primary font-body text-sm mb-3">
+                    {artist.instagramHandle}
+                  </p>
 
                   <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
                     {artist.specialties.map((specialty) => (
