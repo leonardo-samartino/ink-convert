@@ -59,15 +59,22 @@ const About = () => {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="aspect-[4/5] rounded-lg overflow-hidden">
+            {/* Decorative corner elements */}
+            <div className="absolute -top-4 -left-4 w-20 h-20 border-t-2 border-l-2 border-primary rounded-tl-lg" />
+            <div className="absolute -top-4 -right-4 w-20 h-20 border-t-2 border-r-2 border-primary rounded-tr-lg" />
+            <div className="absolute -bottom-4 -left-4 w-20 h-20 border-b-2 border-l-2 border-primary rounded-bl-lg" />
+            <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-2 border-r-2 border-primary rounded-br-lg" />
+            
+            {/* Glow effect */}
+            <div className="absolute inset-0 -z-10 bg-primary/20 blur-2xl scale-90 rounded-full" />
+            
+            <div className="aspect-[4/5] rounded-lg overflow-hidden border border-primary/30 shadow-2xl shadow-primary/20">
               <img
                 src={aboutImage}
-                alt="Tatuagem artística"
+                alt="Tatuagem artística de pegasus"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 w-24 sm:w-32 h-24 sm:h-32 border-2 border-primary rounded-lg" />
-            <div className="absolute -top-6 -right-6 w-24 sm:w-32 h-24 sm:h-32 bg-primary/10 rounded-lg" />
           </div>
         </div>
       </div>
