@@ -1,4 +1,4 @@
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -14,24 +14,15 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-6">
-            <a
-              href="https://instagram.com/estudiovisiontattoo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Instagram"
-            >
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Facebook"
-            >
-              <Facebook className="w-5 h-5" />
-            </a>
-          </div>
+          <a
+            href="https://instagram.com/estudiovisiontattoo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary transition-colors"
+            aria-label="Instagram"
+          >
+            <Instagram className="w-5 h-5" />
+          </a>
 
           <p className="text-muted-foreground font-body text-xs sm:text-sm text-center">
             © 2024 Estudio Vision Tattoo. Todos os direitos reservados.
