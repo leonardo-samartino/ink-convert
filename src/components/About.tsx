@@ -1,4 +1,5 @@
 import { Award, Users, Clock } from "lucide-react";
+import aboutImage from "@/assets/about-tattoo.png";
 
 const stats = [
   {
@@ -60,8 +61,8 @@ const About = () => {
           <div className="relative hidden lg:block">
             <div className="aspect-[4/5] rounded-lg overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?w=800&h=1000&fit=crop"
-                alt="Tattoo studio interior"
+                src={aboutImage}
+                alt="Tatuagem artística"
                 className="w-full h-full object-cover"
               />
             </div>
