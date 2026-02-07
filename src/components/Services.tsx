@@ -18,8 +18,8 @@ const services = [
   },
   {
     icon: Shield,
-    title: "Blackwork & Geométrico",
-    description: "Designs ousados com preenchimentos sólidos e padrões geométricos complexos.",
+    title: "Blackwork & Realismo Preto e Cinza",
+    description: "Realismo em preto e cinza com sombras suaves, alto nível de detalhe e profundidade.",
   },
 ];
 
