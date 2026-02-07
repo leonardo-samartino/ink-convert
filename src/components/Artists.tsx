@@ -45,7 +45,7 @@ const Artists = () => {
             >
               <div className="flex flex-col sm:flex-row">
                 {/* Artist Image */}
-                <div className="relative w-full sm:w-40 md:w-48 h-48 sm:h-auto min-h-[200px] flex-shrink-0 overflow-hidden">
+                <div className="relative w-full sm:w-1/2 h-56 sm:h-auto overflow-hidden">
                   <img
                     src={artist.image}
                     alt={artist.name}
@@ -85,7 +85,9 @@ const Artists = () => {
                     className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-body text-sm tracking-wide group/link"
                   >
                     <Instagram className="w-5 h-5" />
-                    <span className="group-hover/link:underline">{artist.instagramHandle}</span>
+                    <span className="group-hover/link:underline">
+                      {artist.instagramHandle}
+                    </span>
                   </a>
                 </div>
               </div>
@@ -98,3 +100,4 @@ const Artists = () => {
 };
 
 export default Artists;
+

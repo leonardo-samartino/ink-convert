@@ -33,7 +33,7 @@ const Portfolio = () => {
                   {artist.name}
                 </h3>
               </div>
-              <div className="w-full aspect-square sm:aspect-[4/5] rounded-lg overflow-hidden bg-card border border-border">
+              <div className="w-full h-[400px] sm:h-[600px] rounded-lg overflow-hidden bg-card border border-border">
                 <iframe
                   src={`https://www.instagram.com/${artist.instagram}/embed`}
                   className="w-full h-full"

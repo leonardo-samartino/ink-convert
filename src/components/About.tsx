@@ -1,10 +1,10 @@
-import { Award, Users, Clock } from "lucide-react";
+import { Droplet, PenTool, Users, Clock } from "lucide-react";
 import aboutImage from "@/assets/about-tattoo.png";
 
 const stats = [
   {
-    icon: Award,
-    value: "12+",
+    icon: Clock,
+    value: "8+",
     label: "Anos de Experiência",
   },
   {
@@ -13,7 +13,7 @@ const stats = [
     label: "Clientes Satisfeitos",
   },
   {
-    icon: Clock,
+    icon: PenTool,
     value: "5000+",
     label: "Tatuagens Realizadas",
   },
@@ -33,14 +33,14 @@ const About = () => {
               <span className="text-gradient">Precisão</span>
             </h2>
             <p className="text-muted-foreground font-body text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-              No Vision Tattoo, acreditamos que cada tatuagem é uma expressão única da sua 
-              personalidade. Nossa equipe de artistas combina técnica impecável com 
-              criatividade para transformar suas ideias em arte permanente.
+              No Vision Tattoo, cada tatuagem nasce da união entre técnica, identidade e propósito.
+Acreditamos que a arte na pele deve refletir a personalidade de cada cliente, por isso nosso estúdio reúne artistas com estilos distintos e complementares. 
             </p>
             <p className="text-muted-foreground font-body text-base sm:text-lg leading-relaxed mb-8 sm:mb-10">
-              Trabalhamos exclusivamente com agendamento, garantindo atenção total 
-              a cada cliente. Nosso estúdio segue os mais rigorosos padrões de higiene 
-              e segurança.
+              Do traço delicado e preciso do fineline e floral, às composições intensas e expressivas do realismo preto e cinza, cada projeto é desenvolvido de forma personalizada, respeitando a estética, a história e a ideia de quem nos procura.
+            </p>
+            <p className="text-muted-foreground font-body text-base sm:text-lg leading-relaxed mb-8 sm:mb-10">
+              Trabalhamos exclusivamente com agendamento para garantir atenção total em cada etapa do processo. Do primeiro contato ao resultado final, priorizamos conforto, segurança e excelência, seguindo rigorosamente os mais altos padrões de higiene e cuidado profissional.
             </p>
 
             <div className="grid grid-cols-3 gap-4 sm:gap-6">

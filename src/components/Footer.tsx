@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
 
           <a
-            href="https://instagram.com/estudiovisiontattoo"
+            href="https://www.instagram.com/studiovisiontattoo/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
