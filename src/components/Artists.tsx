@@ -1,6 +1,6 @@
 import { Instagram } from "lucide-react";
 import dudstattooImage from "@/assets/dudstattoo.jpg";
-import calderanoImage from "@/assets/calderanotattoo.webp";
+import calderanoImage from "@/assets/calderanoyuri.jpg";
 
 const artists = [
   {
